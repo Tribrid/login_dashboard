@@ -1,0 +1,82 @@
+body
+{
+	font-family: Poppins, sans-serif;
+	background:linear-gradient(to left, transparent, greenyellow ), linear-gradient(to right, greenyellow 0%, #F009FD 51%,  orangered 100% );
+	animation: move 5s infinite;
+	/*background-size: 200% auto;*/
+	/*background-size: cover;*/
+	background-size: 100% 100%, 2000% 100%;
+	/*background-repeat: no-repeat;*/
+}
+@keyframes move 
+{
+ from {background-position: center center, left center;}
+ to {background-position: center center, right center;}
+}
+.box
+{
+	background-color: whitesmoke;
+	width: 300px;
+	height: auto;
+	position: auto;
+	margin-top: 90px;
+	margin-left: 35%;
+	margin-right: 30%;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+.sub
+{
+	background-color: dodgerblue;
+	margin-top: 30px;
+	position: relative;
+	/*margin-left: 100px;*/
+	/*margin-bottom: 20px;*/
+	height: 43px;
+	border-radius: 25px;
+	border: none;
+	transition: .5s;
+	width: 100%;
+	background-size: 200% auto;
+	color: white;
+	cursor: pointer;
+	padding: auto;
+}
+.sub:hover
+{
+	background-position: right center;
+}
+.sub-1
+{
+	/*background-image: linear-gradient(to right, greenyellow 0%, #F009FD 51%,  orangered 100% );*/
+	background-image:linear-gradient(to left, transparent, greenyellow ), linear-gradient(to right, greenyellow 0%, #F009FD 51%,  orangered 100% );
+	animation: move 5s infinite;
+
+}
+.input-field
+{
+	width: 100%;
+	padding: 7px;
+	border-radius: 4px;
+	outline: none;
+	/*border: none;*/
+  /*border: 2px solid dodgerblue;*/
+
+}
+.input-field:focus
+{
+  border: 2px solid dodgerblue;
+}
+h1
+{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 50px;
+	margin-top: -1px;
+}
+.chk
+{
+	margin: 0;
+}

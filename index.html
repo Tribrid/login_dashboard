@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title></title>
+</head>
+<body>
+	<div class="box">
+		<form style="padding-right:20px ;">
+			<h1><center><b>Login</b></center></h1>
+			<label>Username</label>
+			<br><br>
+			<input type="text" name="uname" class="input-field">
+			<br><br>
+			<label>Password</label>
+			<br><br>
+			<input type="password" name="pwd" class="input-field" id="myInput">
+			<br><br>
+			<input type="checkbox" onclick="myFunction()" class="chk">Show Password
+			<button type="submit" name="process" class="sub sub-1"><h3>Submit</h3></button>
+		</form>
+	</div>
+
+<script>
+	function myFunction()
+	{
+		var x = document.getElementById("myInput");
+		if (x.type === "password")
+		{
+			x.type = "text";
+		}
+		else
+		{
+			x.type = "password";
+		}
+	}
+</script>
+</body>
+</html>
